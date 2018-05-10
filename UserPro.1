@@ -1,0 +1,56 @@
+.TH UserPro "25.05.2016" "1.0" "Instrukcja do programu UserPro"
+.SH UserPro
+
+Program do zarządzania użytkownikami w systemie.
+
+.SH OPIS
+
+Program umożliwia dodawanie użytkowników zabezpieczonych hasłem. Stworzonych użytkowników można usuwać, lub też modyfikować. Można również tworzyć lub usuwać nowe grupy użytkowników, oraz dodawać lub usuwać z nich użytkowników.
+
+.SH STRESZCZENIE
+.SS 	./projekt.sh - uruchamia program.
+.SS 	./projekt.sh - v - wyświetla obecną wersję programu.
+.SS 	./projekt.sh - h - uruchamia menu pomocy użytkownika.
+
+.SH FUNKCJE PROGRAMU 
+.SS linia poleceń
+.P
+	-Dodaj Użytkownika		- funkcja, która umożliwia dodanie nowego użytkownika do systemu oraz zabezpieczenie go hasłem
+.P
+	-Usuń Użytkownika		- funkcja, która usuwa z systemu konkretnego użytkownika
+.P
+	-Zmień Hasło			- funkcja, która ustawia nowe hasło do konkretnego użytkownika 
+.P
+	-Zmień Katalog Domowy	- funkcja, która tworzy nowy katalog domowy dla użytkownika ze skopiowaną zawartością
+.P
+	-Zablokuj Użytkownika	- funkcja, która blokuję konkretnego użytkownika - nie będzie on widoczny w menu logowania
+.P
+	-Odblokuj Użytkownika	- funkcja, która odblokowywuje zablokowanego użytkownika
+.P
+	-Data Wygaśnięcia		- funkcja, która ustawia datę wygaśnięcia hasła dla użytkownika 
+.P
+	-Lista Użytkowników		- funkcja, która pokazuje wszystkich użytkowników w danym systemie
+.P
+	-DodajGrupę			- funkcja, która tworzy w systemie nową grupę użytkowników
+.P
+	-Usuń Grupę			- funkcja, która kasuje zadaną grupę użytkowników
+.P
+	-Dodaj Do Grup			- funkcja, która dodaje konkretnego użytkownika do konkretnej grupy
+.P
+	-Usuń Z Grup			- funkcja, która usuwa zadanego użytkownika ze wszystkich grup, w których się znajdował
+.P
+	-Pokaż Grupy			- funkcja, która pokazuje wszystkie grupy użytkowników w danym systemie wraz z ich członkami
+.P
+
+
+.SH ZOBACZ TAKŻE
+.P
+useradd		userdel		addgroup
+.SH UWAGA
+.P
+Aby program funkcjonował poprawnie to użytkownik, który używa ten program
+potrzebuje uprawnień administratora na swoim koncie. W przeciwnym wypadku
+nie jest możliwe tworzenie ani modyfikacja nowych użytkowników.
+.SH AUTOR
+Szymon Kummer (szykumme@roundcube.pg.gda.pl)
+
